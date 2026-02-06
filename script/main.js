@@ -263,7 +263,12 @@ const animationTimeline = () => {
         rotation: 90,
       },
       "+=1"
-    );
+    )
+    .to("#roseBtn", 0.6, {
+  opacity: 1,
+  scale: 1,
+  ease: Elastic.easeOut.config(1, 0.5)
+});
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
